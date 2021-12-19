@@ -1,0 +1,77 @@
+{% extends 'stories/Masterbase.html' %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <a href="#" class="fh5co_con_123"><i class="fa fa-home"></i></a>#}
+{#            <a href="#" class="fh5co_con pt-2"> Contact Us </a>#}
+{#        </div>#}
+{#    </div>#}
+</div>
+    <div class="container-fluid  fh5co_fh5co_bg_contcat">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-md-4 py-3">
+                <div class="row fh5co_contact_us_no_icon_difh5co_hover">
+                    <div class="col-3 fh5co_contact_us_no_icon_difh5co_hover_1">
+                        <div class="fh5co_contact_us_no_icon_div"> <span><i class="fa fa-phone"></i></span> </div>
+                    </div>
+                    <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
+                        <span class="c_g d-block">Liên hệ</span>
+                        <span class="d-block c_g fh5co_contact_us_no_text">+84 982.98.67.68</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3">
+                <div class="row fh5co_contact_us_no_icon_difh5co_hover">
+                    <div class="col-3 fh5co_contact_us_no_icon_difh5co_hover_1">
+                        <div class="fh5co_contact_us_no_icon_div"> <span><i class="fa fa-envelope"></i></span> </div>
+                    </div>
+                    <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
+                        <span class="c_g d-block">Gửi ý kiến phản hồi</span>
+                        <span class="d-block c_g fh5co_contact_us_no_text">huynhdonggiang@gmail.com</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3">
+                <div class="row fh5co_contact_us_no_icon_difh5co_hover">
+                    <div class="col-3 fh5co_contact_us_no_icon_difh5co_hover_1">
+                        <div class="fh5co_contact_us_no_icon_div"> <span><i class="fa fa-map-marker"></i></span> </div>
+                    </div>
+                    <div class="col-9 align-self-center fh5co_contact_us_no_icon_difh5co_hover_2">
+                        <span class="c_g d-block">Địa chỉ</span>
+                        <span class="d-block c_g fh5co_contact_us_no_text"> Phan Huy Ích-P12-Q.Gò Vấp-TP.HCM</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid mb-4">
+    <div class="container">
+        <div class="col-12 text-center contact_margin_svnit ">
+            <div class="text-center fh5co_heading py-2">Liên Hệ</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                 <form action="" method="post" enctype="multipart/form-data" >
+                        {% csrf_token %}
+                        {{  form.media  }}
+                        {{  form.as_p  }}
+                        <input  class="btn btn-primary" type="submit" name="Add StoriesStory" id="" value="Gửi thư liên hệ">
+                    </form>
+            </div>
+            <div class="col-12 col-md-6 align-self-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.615828691788!2d106.63937301428737!3d10.84068336096987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175299cb03fe079%3A0x2081d2f77d5fbc63!2zNDQ4LzY1LzQ5IFBoYW4gSHV5IMONY2gsIFBoxrDhu51uZyAxMiwgR8OyIFbhuqVwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzI3MDEwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1630327391024!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
